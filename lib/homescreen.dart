@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp/database.dart';
+import 'package:whatsapp/status.dart';
 
 class Homescreen extends StatelessWidget{
   @override
   Widget build(BuildContext context){
-  /*Future.delayed(Duration(seconds: 5),(){
+  Future.delayed(Duration(seconds: 5),(){
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context)=> UpdateScreen()),
+      MaterialPageRoute(builder: (context)=> StatusUpdate()),
     );
-  });*/
+  });
   return Scaffold(
 backgroundColor: Colors.black,
 appBar: AppBar(
@@ -65,7 +66,7 @@ bottomNavigationBar: BottomNavigationBar(
   unselectedItemColor: Colors.black,
   items:[
     BottomNavigationBarItem(icon: Icon(Icons.message_outlined,color: Colors.black,),label: "Chats"),
-    BottomNavigationBarItem(icon: Icon(Icons.blur_circular_rounded,color:),label: "Updates"),
+    BottomNavigationBarItem(icon: Icon(Icons.blur_circular_rounded),label: "Updates"),
     BottomNavigationBarItem(icon: Icon(Icons.groups,),label: "Communites"),
     BottomNavigationBarItem(icon: Icon(Icons.call_sharp),label: "Calls"),
   ] 
